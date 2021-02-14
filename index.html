@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -22,11 +23,15 @@
                 <li><a href="#">Contact us</a></li>
                 <li><a href="#">Team</a></li>
             </ul>
+            <!-- Bars -->
+            <div class="toggle">
+
+            </div>
         </nav>
         <!-- Text -->
         <div class="text-container">
             <p>Hello,</p>
-            <p>I'M VLADIMIR</p>
+            <p>I'M LVN</p>
             <p>I am Web Designer <br>& FronEnd Developer</p>
             <button class="hire-btn">Hire me</button>
             <button class="down-cv">Dowload CV</button>
@@ -145,5 +150,15 @@
         <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
     <!-- End Attached social bar -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="JQuery.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('nav').toggleClass('active')
+        })
+    })
+    </script>
 </body>
 </html>
